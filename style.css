@@ -1,0 +1,479 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+.clear {
+	clear: both;
+	display: block;
+	}
+	
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+
+ol, ul, li {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+	line-height: 1;
+	background: #f6f7f1 url(images/bg.png) repeat-x;
+	font-family: Verdana, Arial, "Century Gothic";
+	font-size: 12px;
+	color: #878787;
+	}
+	
+h1,h2 { 
+color: #309DCF; 
+font-weight: bold; 
+} 
+h1 { 
+font-size: 24px; 
+line-height: 34px; 
+} 
+h2 { 
+font-size: 18px; 
+line-height: 34px; 
+} 
+h3 { 
+color: #333333; 
+font-size: 18px; 
+line-height: 34px; 
+} 
+a:link { 
+color: #309DCF; 
+text-decoration: none; 
+} 
+a:visited { 
+text-decoration: none; 
+color: #309DCF; 
+} 
+a:hover { 
+text-decoration: none; 
+color: #333333; 
+} 
+a:active { 
+text-decoration: none; 
+color: #309DCF; 
+} 
+/* --- container rules ---*/
+#container {
+	margin: 0 auto; /* alaways do this for centering content */
+	width: 900px;
+	}
+
+/*--- 
+header section [top-bar , header, nav] 
+---*/
+
+/* top bar */
+
+#top-bar {
+	float: left;
+	height: 24px;
+	width: 900px;
+	padding-top: 8px;
+	}
+
+#top-bar a {
+	color: #ffffff;
+	text-decoration: none;
+	}
+
+#top-bar a:hover {
+	color: #323232;
+	text-decoration: none;
+	}
+
+.nav1 li {
+	display: inline;
+	list-style-type: none;
+	margin-right: 20px;
+	color: #ffffff;
+	float: left;
+	}
+
+.nav2 li {
+	display: inline;
+	list-style-type: none;
+	margin-right: 20px;
+	color: #ffffff;
+	float: right;
+	}
+/* header */
+#header {
+	float: left;
+	height: 125px;
+	width: 900px;
+	}
+
+#site-title {
+	height: 80px;
+	float: left;
+	padding-top: 45px;
+	}
+#site-title h1 {
+	color: #ffffff;
+	text-transform: uppercase;
+	font: 24px italic bold;
+	}
+
+.blue-title {
+	color: #309dcf;
+	}
+	
+.slogan {
+	font-size: 12px;
+	font-weight: normal;
+	text-transform: none;
+	padding-left: 50px;
+	font-style: italic;
+	}
+	
+#search {
+	float: right;
+	padding-top: 45px;
+	}
+
+.search-field {
+	margin-right: 10px;
+	padding: 4px;
+	background-color: #494949;
+	border: 1px solid #666666;
+	color: white;
+	}
+	
+.search-button {
+	display: inline-block;
+	width: 50px;
+	padding: 2px;
+	background-color: #494949;
+	border: 1px solid #666666;
+	color: white;
+	}
+
+.search-button:hover {
+	background-color: #707070;
+	}
+	
+/* navigation */
+
+#nav {
+	height: 42px;
+	float: left;
+	width: 900px;
+	}
+
+.nav_link li {
+	display: block;
+	float: left;
+	}
+
+.nav_link li a {
+	text-decoration: none;
+	color: #5f5f5f;
+	display: block;
+	height: 27px;
+	padding: 15px 17px 0 17px;
+	}
+	
+.withdiv {
+	background: url(images/nav_divider.png) no-repeat;
+	}
+	
+.nav_link li  a:hover {
+	color: #ffffff;
+	background: url(images/nav_hover.png) repeat-x;
+	}
+	
+/* --- main content [content container include content and sidebar]--- */
+
+#content {
+	float:left;
+	width: 900px;
+	margin-top: 20px;
+	padding-bottom: 20px;
+	
+	}
+
+/* content left side [actual content] */
+
+#left {
+	background-color: white;
+	float: left;
+	width: 900px;
+	border-radius: 5px;
+	}
+	
+.a-post {
+	background: #f3f3f3;
+	border: 2px solid white;
+	width: 876px;
+	padding: 10px;
+	float: left;
+	border-radius: 5px;
+	}
+	
+.a-post h1 {
+	color: #309dcf;
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 34px;
+	}
+
+.a-post img {
+	border: 1px solid #d4d4d4;
+	padding: 5px;
+	float: left;
+	}
+
+.post-img {
+	float: left;
+	height: 198px;
+	width: 234px;
+	margin-right: 10px;
+	}
+
+.post-title {
+	float: left;
+	width: 878px;
+	margin-bottom: 10px;
+	}
+	
+.post-title p {
+	color: #ffffff;
+	background-color: #90c6df;
+	float: left;
+	}
+
+.post-desc {
+	float: left;
+	width: 878px;
+	text-align: justify;
+	line-height: 16px;
+	}
+
+
+/* tampilan untuk list view*/
+.list-view {
+      font-family: Consolas, Monaco, Courier New, Courier, monospace;
+      font-size: 14px;
+      background-color: #f9f9f9;
+      border: 1px solid #D0D0D0;
+      color: #002166;
+      display: inline-block; 
+      margin: 14px 0;
+      padding: 12px 10px 12px 10px;
+      line-height: 1;
+	  
+}
+
+.det-view {
+      font-family: Consolas, Monaco, Courier New, Courier, monospace;
+      font-size: 12px;
+      background-color: #f9f9f9;
+      border: 1px solid #D0D0D0;
+      color: #002166;
+      display: inline; 
+      margin: 0;
+      padding: 5px;
+      line-height: 1.5;
+	  float:left;
+	  width: 520px;
+	  
+      
+}
+
+.img-view {
+      font-family: Consolas, Monaco, Courier New, Courier, monospace;
+      font-size: 12px;
+      background-color: #f9f9f9;
+      /*//border: 1px solid #D0D0D0;*/
+      color: #002166;
+      display: inline-block; 
+      margin: 0 15px;
+      padding: 2px;
+	  float: right;
+	  width: auto;
+	
+      
+}
+
+/* footer */
+
+#footer { 
+background-image: url(images/footer_bg.png); 
+background-repeat: repeat-x; 
+clear: both; 
+height: 100px; 
+} 
+#footer-topbar { 
+height: 33px; 
+width: 900px; 
+margin: auto; 
+} 
+#footer-topbar h1 { 
+color: #FFFFFF; 
+font-size: 20px; 
+font-weight: bold; 
+text-transform: uppercase; 
+font-style: italic; 
+padding-top: 3px; 
+} 
+#footer-topbar span { 
+font-size: 12px; 
+font-style: normal; 
+font-weight: normal; 
+font-variant: normal; 
+color: #FFFFFF; 
+} 
+#footer-content { 
+height: 50px; 
+width: 900px; 
+margin: auto; 
+} 
+#footer-content p { 
+color: #FFFFFF; 
+padding-top: 20px; 
+text-align: right; 
+}
+
+#loginform {
+	
+	margin:0 auto;
+    padding: 20px;
+    width: 250px;
+	border-radius: 10px;
+	background-color: #e1e1e1;
+ 
+	}
+.login-label {
+	
+	font-weight: bold;
+	line-height: 1.5;
+	font-size: 13px;
+	font-style: normal;
+	color: #120394;
+    padding: 6px;
+	display: inline-block;
+    margin-bottom: 5px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 0px;
+	}
+	
+.login-field {
+	width: 230px;
+    background: #ffffff;
+    padding: 6px;
+    margin-bottom: 10px;
+	border-radius: 4px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 0px;
+	text-align: center;
+	color: #1806f9;
+	
+	}
+	
+.login-button {
+	width: 100px;
+    color: #fff;
+    text-transform: lowercase;
+    text-shadow: #000 1px 1px;
+    
+    margin-top: 10px;
+	
+	/*** Adding CSS3 Gradients ***/
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#2f6de1), to(#0d7dc8));   
+    background:  -moz-linear-gradient(19% 75% 90deg,#2f6de1, #0d7dc8);   
+
+	}
+
+.login-button:hover {
+	background: #610ed1;
+	}
+	
+.back-button {
+	display: inline-block;
+	background-color: #cccccc;
+	font-family: 'BebasNeueRegular','Arial Narrow',Arial,sans-serif;
+	width: auto;
+	padding: 3px 20px;
+	margin: 10px auto;
+	text-align: center;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: bold;
+	border-radius: 4px;
+    color: blue;
+}
+
+/* style untuk form */
+#add-form {
+	margin: 0 auto;
+	width: 650px;
+	padding: 10px;
+}
+
+#label-style {
+	float: left;
+	width: 20%;
+	text-align: right;
+	color: #1e07b6;
+	font-size: 14px;
+	line-height: 118%;
+	font-weight: bold;
+}
+
+#input-style {
+	width: 78%;
+	float: right;
+}
+
+.form-label {
+	display: block;
+	margin: 10px 0;
+}
+
+.form-field {
+	display: block;
+	margin: 5px 0;
+	
+}
